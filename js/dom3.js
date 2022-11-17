@@ -26,7 +26,7 @@ function loadCallback() {
 //     }
 //     console.log(trs);
 }
-
+//jjjjjjjjj
 function modFnc() {
     let chnChk = document.querySelector()
 }

@@ -1,0 +1,15 @@
+1.
+<script src="js/dom3.js"></script>
+<body> => <head>
+
+2.
+css 폴더 > cust_style
+
+3.
+dom.html
+array4.js
+dom1.js
+dom2.js
+dom3.js
+
+*변경을 누르면 값 변경

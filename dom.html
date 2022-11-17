@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom.html</title>
+    <style>
+        div {
+            width: 60%;
+            height: 250px;
+            background-color: yellow;
+        }
+        span {
+            display: inline-block;
+            width: 100px;
+            padding: 2px;
+            background-color: aquamarine;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="show">
+
+    </div>
+    <br>
+    <input type="text" id="write" value=""><button id="btn">삭제</button>
+
+    <script>
+        let words =
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa est laudantium quae? Sit ipsam, dicta eos eius quinesciunt impedit fuga quod, incidunt culpa a, repellendus magnam cum nobis animi';
+        let wordAry = words.split(' '); // <span>Lorem</span> 
+
+    let show = document.getElementById('show');
+    for (let word of wordAry) {
+        let span = document.createElement('span');
+        span.innerText = word;
+        show.append(span);
+    }
+    
+    // 버튼클릭 이벤트 등록해서...사용자가 입력한 값이랑 같은 span 찾아서 display = 'none'
+    // document.querySelector('span').style.display = 'none';
+    // code here...
+    document.getElementById('write').addEventListener('change', function() { // getElementById랑 querySelector 비슷한데 다름
+    let userInput = document.querySelector('#write').value; // 사용자의 입력값
+    let spans = document.querySelectorAll('span'); // 화면의 span 전체 선택
+    for (let span of spans) {
+    if (span.innerText == userInput) {
+    span.style.display = 'none';
+    }
+    document.querySelector('#write').value = '';
+    }
+    });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="css/cust_style.css">
+    <script src="js/dom3.js"></script>
+</head>
+
+<style>
+    /* table:nth-child(2) td {
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+    }
+    table:nth-child(3) th,
+    table:nth-child(3) td {
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+        margin: 3px;
+        border: 1px solid black;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: yellow;
+    }
+    tr:nth-of-type(2n+1) {
+        background-color: pink;
+    } */
+
+    table:nth-child(3) td {
+        text-align: center;
+        width: 20px;
+    }
+
+</style>
+
+<body>
+    <!-- <table>
+        <tr>
+            <td>Apple</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+        </tr>
+        <tr>
+            <td>Cherry</td>
+        </tr>
+    </table> -->
+    이름: <input type="text" name="name" id="name"><br>
+    나이: <input type="number" name="age" id="age"><br>
+    생일: <input type="date" name="birth" id="birth"><br>
+    <button id="btn">추가</button>
+    <button id="delBtn">선택삭제</button>
+    <button id="modBtn">변경</button>
+
+    <div class="show">
+        <table id="list"></table> <!-- ul#list : list 값을 가진 ul -->
+        <!-- <thead><tr><th>이름</th><th>나이</th><th>생일</th></tr></thead> -->
+    </div>
+    <!-- <script src="js/dom2.js"></script> -->
+</body>
+
+</html>

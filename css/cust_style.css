@@ -1,0 +1,8 @@
+#show {
+    height: 200px;
+    background-color: yellow;
+}
+
+#show>p:nth-of-type(2) {
+    color: red;
+}

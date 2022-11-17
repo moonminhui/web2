@@ -17,6 +17,7 @@ function loadCallback() {
     // 추가 기능
     document.getElementById('btn').addEventListener('click', addFunc); // Id값으로 요소를 가져오겠다. addEventListener(이벤트타입, 실행함수)
     document.getElementById('delBtn').addEventListener('click', deleteFnc);
+    document.getElementById('modBtn').addEventListener('click', modFnc);
     // mouseover, mouseout 이벤트
 //     let trs = document.querySelectorAll('tbody>tr'); // tbody의 tr만 가져오겠다
 //     for (let tr of trs) {
@@ -26,9 +27,12 @@ function loadCallback() {
 //     console.log(trs);
 }
 
+function modFnc() {
+    let chnChk = document.querySelector()
+}
 
 function deleteFnc() {
-    let allChk = document.querySelectorAll('tbody input[type="checkbox"]:checked'); // tbody에 해당하는 것만 삭제
+    let allChk = document.querySelectorAll('tbody input[type="checkbox"]:checked'); // tbody에 해당하는 것만
     console.log(allChk);
     for(let chk of allChk) {
         chk.parentElement.parentElement.remove();

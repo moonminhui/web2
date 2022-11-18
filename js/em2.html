@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html">
+        과일: <input type="text" name="fruit" id="fruit"><br>
+        가격: <input type="number" name="price" id="price"><br>
+        <!-- <input type="sumbit" id="add" value="add"> -->
+        <button type="button" id="addBtn">추가</button>
+    </form>
+    <br>
+    <ul id="list">
+    </ul>
+
+    <script>
+        let ul = document.createElement('ul');
+        let li = document.createElement('li');
+
+        document.getElementById('addBtn').addEventListener('click', function () {
+            let fruit = document.getElementById('fruit').value;
+            let price = document.getElementById('price').value;
+            // console.log(fruit);
+            // console.log(price);
+            let li = document.createElement('li');
+            li = document.createElement(fruit);
+            document.write('li');
+            let result = document.createTextNode
+            
+            
+            // ul.appendChild(li);
+            // console.log(li)
+
+        }
+            
+        )
+        
+    </script>
+
+</body>
+</html>

@@ -26,7 +26,9 @@ function loadCallback() {
 //     }
 //     console.log(trs);
 }
-//jjjjjjjjjjfdlfjklsdafjklsdafjkl
+
+
+//
 function modFnc() {
     let name = document.getElementById('name').value;
     let age = document.getElementById('age').value;
@@ -54,7 +56,6 @@ function addFunc() {
     let birth = document.querySelector('#birth').value;
     let props = {name: name, age: age, birth: birth}; // [name, age, birth];
     // 반복
-
     document.querySelector('#list>tbody').append(makeRow(props));
     document.createElement('tr');
     }

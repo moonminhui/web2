@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 프레임워크 개발자 양성과정</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="disp">
+            <label>학생이름:</label> <input type="text" name="name" id="name"><br>
+            <label>나이:</label> <input type="text" name="name" id="name"><br>
+            <label>점수:</label> <input type="text" name="name" id="name"><br>
+        </div>
+
+        <div class="fnc">
+            <button id="addBtn">등록</button>
+            <button id="addBtn">선택삭제</button>
+        </div>
+
+        <div class="cal">
+            <button id="avgBtn">평균계산</button>
+            <button id="maxBtn">최고점수</button>
+        </div>
+
+    </header>
+
+    <main>
+        <table id="result" border="1">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>점수</th>
+                    <th><input type="checkbox"></th>
+                </tr>
+            </thead>
+            <tbody id="list">
+                <!-- 기능 구현한 결과화면.. -->
+                <tr>
+                    <td>황은수</td>
+                    <td>20</td>
+                    <td>70</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>김이서</td>
+                    <td>21</td>
+                    <td>80</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>박민수</td>
+                    <td>25</td>
+                    <td>90</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <div id="calculate">
+            <span id="max">최고점수: 90</span>
+            <span id="max">평균점수: 80</span>
+        </div>
+    </main>
+
+    <script>
+        let students = [{
+            name: "황은수",
+            age: 20,
+            score: 70
+        }, {
+            name: "김이서",
+            age: 21,
+            score: 80
+        }, {
+            name: "박민수",
+            age: 25,
+            score: 90
+        }]
+    </script>
+
+</body>
+
+</html>
